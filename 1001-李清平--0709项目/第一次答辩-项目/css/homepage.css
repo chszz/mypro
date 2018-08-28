@@ -1,0 +1,552 @@
+
+
+/*<!--轮播部分---------------------------------------->*/
+
+.swiper-container {
+	width: 950px;
+	height: 500px;
+	margin: 0 auto !important;
+	/*position: relative;*/
+	cursor: pointer;
+	/*overflow: hidden;*/
+	}
+
+.swiper-pagination-bullet{
+	width: 50px !important;
+	height: 50px !important;
+	background: red;
+}
+/*下划线----------------------------------------*/
+
+#underline {
+	width: 950px;
+	height: 2px;
+	border-bottom: 1px solid darkgray;
+	margin: 30px auto;
+}
+
+
+/*<!--世界杯图片-------------------------------------->*/
+
+#surpriseMap {
+	width: 950px;
+	height: 291px;
+	/*background: darkblue;*/
+	margin: 31px auto;
+}
+
+#surpriseMap .half_area {
+	float: left;
+	width: 461px;
+	height: 291px;
+	background: url(../img/010.jpg) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#surpriseMap .world_Cup {
+	float: right;
+	width: 461px;
+	height: 291px;
+	background: url(../img/011.jpg) no-repeat;
+	border: 1px solid #fffaf0;
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+/*<!-小窗口播放------------------------------------------------>*/
+
+video {
+	display: block;
+	width: 950px;
+	height: 535px;
+	background: firebrick;
+	margin: 58px auto 0;
+}
+
+
+/*#video h1{
+	font-size: 80px;
+	color: #7fd335;
+}*/
+
+
+/*<!--中间区域--图片----------------------------------------------->*/
+
+#middleArea {
+	width: 950px;
+	height: 1186px;
+	/*background: #d24150;*/
+	margin: 5px auto 0;
+	overflow: hidden;
+}
+
+
+/*精品尝试-------------------------------------------------------*/
+
+#middleArea .boutique_attempt {
+	width: 950px;
+	height: 34px;
+	/*background: darkmagenta;*/
+	text-align: center;
+	text-transform: capitalize;
+	margin: 0 auto;
+	font-size: 25px;
+	font-weight: normal;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+
+/*<!--上图片------------------------------------------>*/
+
+.topPicture {
+	width: 950px;
+	height: 300px;
+	/*background: #000;*/
+	margin: 40px auto 0;
+}
+
+.topPicture .t_shirt {
+	float: left;
+	width: 459px;
+	height: 300px;
+	background: url(../img/012.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.topPicture .shirt {
+	float: right;
+	width: 459px;
+	height: 300px;
+	background: url(../img/013.jpg) no-repeat;
+	cursor: pointer;
+}
+
+
+/*<!--中图片----------------------------------------------->*/
+
+.inPicture {
+	width: 950px;
+	height: 495px;
+	/*background: #000;*/
+	margin: 26px auto 0;
+	overflow: hidden;
+}
+
+.inPicture .shorts {
+	float: left;
+	width: 295px;
+	height: 495px;
+	background: url(../img/014.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.inPicture .casual_pants {
+	float: left;
+	width: 295px;
+	height: 495px;
+	background: url(../img/015.jpg) no-repeat;
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.inPicture .jeans {
+	float: right;
+	width: 295px;
+	height: 380px;
+	background: url(../img/016.jpg) no-repeat;
+	cursor: pointer;
+}
+
+
+/*<!--下图片----------------------------------------------------p>*/
+
+.lowerPicture {
+	width: 950px;
+	height: 266px;
+	/*background: #000;*/
+	margin: 26px auto 0;
+	position: relative;
+}
+
+.lowerPicture .loose_coat {
+	float: left;
+	width: 295px;
+	height: 266px;
+	background: url(../img/018.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.lowerPicture .mans_suit {
+	float: left;
+	width: 295px;
+	height: 266px;
+	background: url(../img/019.jpg) no-repeat;
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.lowerPicture .mens_Shoes {
+	/*float: right;*/
+	width: 295px;
+	height: 384px;
+	background: url(../img/017.jpg) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 1px;
+	cursor: pointer;
+}
+
+
+/*<!--热销尖货--五折起------------------------------------------------->*/
+
+#recomMeno {
+	width: 950px;
+	height: 2879px;
+	background: url(../img/020.jpg) no-repeat;
+	margin: 105px auto 0;
+	cursor: pointer;
+}
+
+
+/*<!--休闲裤精品等等------------------------>*/
+
+#fineQuality {
+	width: 950px;
+	height: 3478px;
+	background: url(../img/021.jpg) no-repeat;
+	margin: 60px auto 0;
+	cursor: pointer;
+}
+
+
+/*<!--new - 近期新品---------------------------------------->*/
+
+#new .new_arrival {
+	width: 950px;
+	height: 65px;
+	/*background: darkmagenta;*/
+	text-align: center;
+	text-transform: capitalize;
+	margin: 50px auto 0;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+
+/*<!--新品集全--------------------------------------->*/
+
+#newArrival {
+	width: 950px;
+	height: 196px;
+	background: url(../img/025.jpg) no-repeat;
+	cursor: pointer;
+	margin: 0 auto;
+	position: relative;
+}
+
+#newArrival h3 {
+	position: absolute;
+	left: 146px;
+	top: 45%;
+	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+}
+
+#newArrival .see {
+	position: absolute;
+	left: 162px;
+	top: 55%;
+	margin-top: 15px;
+	width: 110px;
+	height: 30px;
+	/*font-weight: "微软雅黑";*/
+	color: #000;
+	font-size: 20px;
+	border: 1px solid #000;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/*<!--接近尾部的三张图片-------------------------------->*/
+
+#shrlSof {
+	/*float: left;*/
+	width: 950px;
+	height: 392px;
+	background: url(../img/024.jpg) no-repeat;
+	cursor: pointer;
+	margin: 110px auto 0;
+}
+
+#mlmr {
+	/*float: left;*/
+	width: 950px;
+	height: 314px;
+	background: url(../img/023.jpg) no-repeat;
+	margin-left: 32px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+#essenTlls {
+	/*float: right;*/
+	width: 950px;
+	height: 314px;
+	background: url(../img/022.jpg) no-repeat;
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*bottom: 1px;*/
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+
+/*<!--精彩专辑----------------------------------->*/
+
+#attri_utes {
+	width: 950px;
+	height: 879px;
+	margin: 93px auto 0;
+	background: url(../img/039.jpg) no-repeat;
+}
+
+
+/*<!--图片1----------------------------------------------->*/
+
+* .inPicture {
+	width: 950px;
+	height: 495px;
+	/*background: #000;*/
+	/*margin: 26px auto 0;*/
+	/*overflow: hidden;*/
+}
+
+.inPicture .shorts {
+	float: left;
+	width: 295px;
+	height: 495px;
+	background: url(../img/014.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.inPicture .casual_pants {
+	float: left;
+	width: 295px;
+	height: 495px;
+	background: url(../img/015.jpg) no-repeat;
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.inPicture .jeans {
+	float: right;
+	width: 295px;
+	height: 380px;
+	background: url(../img/016.jpg) no-repeat;
+	cursor: pointer;
+}
+
+
+/*<!--图片2----------------------------------------------------p>*/
+
+.lowerPicture {
+	width: 950px;
+	height: 266px;
+	/*background: #000;*/
+	margin: 26px auto 0;
+	position: relative;
+}
+
+.lowerPicture .loose_coat {
+	float: left;
+	width: 295px;
+	height: 266px;
+	background: url(../img/018.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.lowerPicture .mans_suit {
+	float: left;
+	width: 295px;
+	height: 266px;
+	background: url(../img/019.jpg) no-repeat;
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.lowerPicture .mens_Shoes {
+	/*float: right;*/
+	width: 295px;
+	height: 384px;
+	background: url(../img/017.jpg) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 1px;
+	cursor: pointer;
+}
+
+
+/*脚步导航栏--------------------------------------*/
+
+#taliNav {
+	width: 950px;
+	height: 38px;
+	margin: 20px auto 0;
+}
+
+#taliNav ul {
+	width: 950px;
+	height: 38px;
+	background: #000;
+}
+
+#taliNav ul li {
+	width: 117px;
+	height: 18px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+
+#taliNav ul li {
+	background: url(../img/038.jpg) no-repeat left;
+	margin-top: 9px;
+}
+
+#taliNav li:nth-of-type(1) {
+	border-left: none;
+}
+
+#taliNav ul li:hover {
+	cursor: pointer;
+}
+
+
+/*<!--脚步三小导航栏------胜利即将到来 加油 李清平---->*/
+
+#obeShori {
+	width: 950px;
+	height: 34px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#obeShori li:nth-of-type(1) {
+	float: left;
+	width: 200px;
+	height: 34px;
+	position: absolute;
+	left: 102px;
+	top: 65px;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#obeShori li:nth-of-type(2) {
+	float: left;
+	width: 100px;
+	height: 40px;
+	/*background: #2f4f4f;*/
+	position: absolute;
+	left: 50%;
+	top: 65px;
+	font-size: 17px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#obeShori li:nth-of-type(3) {
+	float: left;
+	width: 100px;
+	height: 34px;
+	/*background: #2f4f4f;*/
+	position: absolute;
+	right: 126px;
+	top: 65px;
+	font-size: 17px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+/*<!--脚步边框---------->*/
+
+#tailborder {
+	width: 950px;
+	border-top: 1px solid darkgray;
+	margin: 71px auto 0;
+}
+
+
+/*<!--脚步文字---------->*/
+
+#tailText {
+	width: 950px;
+	height: 125px;
+	margin: 15px auto 0;
+	position: relative;
+}
+
+#tailText .chart {
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	background: url(../img/009.png) no-repeat 0 -659px;
+}
+
+#tailText p {
+	display: block;
+	width: 200px;
+	height: 34px;
+	position: absolute;
+	left: 45%;
+	top: 25px;
+	font-size: 11px;
+	color: #d8bfd8;
+	letter-spacing: 5px;
+	color: #000;
+}
+
+#tailText p:hover {
+	cursor: pointer;
+}
+
+#tailText h2:nth-of-type(1) {
+	width: 950px;
+	height: 40px;
+	position: absolute;
+	left: 28%;
+	top: 63px;
+	font-size: 17px;
+}
+
+#tailText h2:nth-of-type(2) {
+	width: 250px;
+	height: 34px;
+	position: absolute;
+	left: 43%;
+	top: 95px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+/*<!--脚步------------------------------------------->*/
+
+
+/*#pace{
+	width: 1000px;
+	height: 3000px;	
+	background: white;
+}*/

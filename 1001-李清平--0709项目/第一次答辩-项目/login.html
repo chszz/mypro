@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/header.css"/>-->
+		<!--<link rel="stylesheet" type="text/css" href="css/footer.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="icon" href="img1/003.jpg/">
+		
+	</head>
+	<body>	
+		<div id="headerHea">
+			
+		</div>
+		<!--/*登录页面*/-->
+		<div id="signpost">
+			<h4>
+				首页 / 登录
+			</h4>
+		</div>
+		<div id="login">
+			<h2>登录</h2>
+			<div class="login_wrapper">
+				<h4>会员注册</h4>
+				<form class="post" target="rfFrame">
+					<div class="login-init">
+						<label class="password">账号:</label>
+						<input type="text" name="" id="search_" placeholder="请输入手机号登录"/>
+						<span class="input_">请输入正确的手机号
+							
+						</span>
+						<br />
+						<label class="password">验证码:</label>
+						<input type="password" name="" id="empty" value="" />
+						<button class="getCodeBtn">获取动态验证码</button>
+						<div class="passBtn">
+							<dd>已注册会员可直接输入手机号和验证码登录；</dd>
+							<!--<br />-->
+							<h6>若您尚未注册会员，可先输入手机号，获取并再次输入动态验证码，登录同时将注册成为会员；</h6>
+							<!--<br />-->
+		                 	<a href="#" class="number">点击使用DA账号登录</a>
+						</div>
+					</div>
+					<button class="login_btn">登录</button>
+					<p class="login_bottom">
+						如果您是ONLY，VERO MODA 或 SELECTED会员，可直接输入账号登录
+					</p>
+				</form>
+				
+				<iframe id="rfFrame" name="rfFrame" src="about:blank" style="display:none;"></iframe> 
+				<!--target 事件属性。-->
+			</div>
+		</div>
+		<div id="footerTT">
+			
+		</div>
+	</body>
+	
+	
+	
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript">
+		
+	</script>
+	
+	<script src="js/Sign in.js" type="text/javascript">
+		
+	</script>
+	<script  src="js/login.js" type="text/javascript">
+		
+	</script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			#small{
+				width: 350px;
+				height: 350px;
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				cursor: pointer;
+			}
+			#small img{
+				width: 350px;
+				height: 350px;
+			}
+			#mask{
+				width: 150px;
+				height: 150px;
+				 background-color: rgba(221,165,32,0.4);
+				 position: absolute;
+				 left: 0;
+				 top: 0;
+				 display: none;
+			}
+			#big{
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				left: 460px;
+				top: 100px;
+				overflow: auto;
+				border: 10px solid blue;
+			}
+			#big img{
+				width: 1000px;
+				height: 1000px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="small">
+			<img src="img/timg.jpg"/>
+			<div id="mask"></div>
+		</div>
+		<div id="big">
+			<img src="img/timg.jpg" id="bigimg"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var small=document.getElementById("small");
+			var mask=document.getElementById("mask");
+			var big=document.getElementById("big");
+			var bigimg=document.getElementById("bigimg");
+			
+			small.onmousemove=function(e){
+				var e=e||event;
+		
+			var x=e.clientX-small.offsetLeft-mask.offsetWidth/2;
+			var y=e.clientY-small.offsetTop-mask.offsetHeight/2;
+			//不能小于0
+			x=x<0?0:x;
+			y=y<0?0:y;
+			//不能大于最大
+		var maxwidth=small.offsetWidth-mask.offsetWidth;
+		var maxheight=small.offsetHeight-mask.offsetHeight;
+	
+		x=x>maxwidth?maxwidth:x;
+		y=y>maxheight?maxheight:y;
+		//赋值给选取框
+			mask.style.top=y+"px";
+			mask.style.left=x+"px";
+			//算出比例
+			var xbili=bigimg.offsetWidth/small.offsetWidth;
+			var ybili=bigimg.offsetHeight/small.offsetHeight;
+			//大图片的位置----小选取框top ；left  的倍数
+			big.scrollLeft=x*xbili;
+			//console.log(big.scrollLeft);
+			//console.log(big.scrollWidth);
+			console.log(big.offsetWidth);
+			//console.log(big.clientWidth);
+			big.scrollTop=y*ybili;
+				
+		}
+			small.onmouseover=function(){
+				big.style.display="block";
+				mask.style.display="block";
+				
+			}
+//			small.onmouseout=function(){
+//				mask.style.display="none";
+//				big.style.display="none";
+//			}
+			
+			
+			
+		}
+		
+		
+	</script>
+</html>

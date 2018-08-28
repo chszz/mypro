@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .smallBox{
+            top: 100px;
+            left: 50px;
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border: 1px solid #000;
+
+        }
+        .smallBox img{
+        	width: 350px;
+            height: 350px;
+        }
+        .mask{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            background-color: rgba(221,165,32,0.4);
+
+        }
+        .bigBox{
+            position: absolute;
+            top: 100px;
+            left: 410px;
+            border: 1px solid #000;
+            width: 400px;
+            height: 400px;
+          overflow: hidden;
+            
+        }
+        .bigBox img{
+        	width: 943px;
+        	height: 943px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="smallBox" id="smallBox">
+        <img src="img/timg6G1DDRSS.jpg" alt=""/>
+        <div class="mask" id="mask"></div>
+    </div>
+    <div class="bigBox" id="bigBox">
+        <img src="img/timg6G1DDRSS.jpg" alt="" id="bigImg"/>
+    </div>
+</div>
+</body>
+
+<script>
+    var smallBox=document.getElementById('smallBox');
+    var mask=document.getElementById('mask');
+    var bigBox=document.getElementById('bigBox');
+    var bigImg=document.getElementById('bigImg');
+
+//    第一步:鼠标移上小盒子让遮罩层显示
+    smallBox.onmousemove=function(e){
+        e=e||window.event;
+//        让遮罩层和大盒子显示
+        mask.style.display='block';
+        bigBox.style.display='block';
+
+//        获取鼠标的在小盒子中的位置
+        var maskX=page(e).pageX-smallBox.offsetLeft;
+        var maskY=page(e).pageY-smallBox.offsetTop;
+
+//        让鼠标在遮罩层的中间位置
+        var x=maskX-mask.offsetWidth/2;
+        var y=maskY-mask.offsetHeight/2;
+
+//不能让遮罩层移出小盒子的范围
+
+        x=x<0?0:x;
+        y=y<0?0:y;
+
+        x=x>smallBox.offsetWidth-mask.offsetWidth?smallBox.offsetWidth-mask.offsetWidth:x;
+        y=y>smallBox.offsetHeight-mask.offsetHeight?smallBox.offsetHeight-mask.offsetHeight:y;
+
+        mask.style.left=x+'px';
+        mask.style.top=y+'px';
+
+//        最后让大图片的位置随着遮罩层的位置发生变化，移动的方向为反方向
+//        算法:(大盒子/遮罩层)=(大图片/小图片)，按照这个比例算就行了
+        bigImg.style.left=-bigBox.offsetWidth/mask.offsetWidth*x+'px';
+        bigImg.style.top=-bigBox.offsetHeight/mask.offsetHeight*y+'px';
+
+    }
+
+    smallBox.onmouseout=function(){
+        mask.style.display='none';
+        bigBox.style.display='none';
+    }
+
+    /*----封装页面的坐标函数---*/
+    function page(e) {
+        return {
+           pageY: e.pageY||e.clientX+document.body.srcollLeft,
+            pageX: e.pageX 
+        }
+    }
+</script>
+</html>

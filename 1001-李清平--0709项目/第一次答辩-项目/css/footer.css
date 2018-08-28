@@ -1,0 +1,131 @@
+"UTF-8";
+/*脚步导航栏--------------------------------------*/
+#taliNav{
+	width: 950px;
+	height: 38px;
+	margin: 20px auto 0;
+}
+#taliNav ul{
+	width: 950px;
+	height: 38px;
+	background: #000;
+	margin: 0 auto;
+}
+#taliNav ul li{
+	width: 117px;
+	height: 18px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+#taliNav ul li{
+	background: url(../img/038.jpg) no-repeat left;
+	margin-top: 9px;
+}
+#taliNav li:nth-of-type(1){
+	border-left: none;
+	
+}
+#taliNav ul li:hover{
+	cursor: pointer;
+}
+/*<!--脚步三小导航栏------胜利即将到来 加油 李清平---->*/
+#obeShori{
+	width: 950px;
+	height: 34px;
+	margin: 0 auto;
+	position: relative;
+}
+#obeShori li:nth-of-type(1){
+	float: left;
+	width: 200px;
+	height: 34px;
+	position: absolute;
+	left: 102px;
+	top: 65px;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+#obeShori li:nth-of-type(2){
+	float: left;
+	width: 100px;
+	height: 40px;
+	/*background: #2f4f4f;*/
+	position: absolute;
+	left: 50%;
+	top: 65px;
+	font-size: 17px;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+#obeShori li:nth-of-type(3){
+	float: left;
+	width: 100px;
+	height: 34px;
+	/*background: #2f4f4f;*/
+	position: absolute;
+	right: 126px;
+	top: 65px;
+	font-size: 17px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*<!--脚步边框---------->*/
+#tailborder{	
+	width: 950px;
+	border-top: 1px solid darkgray;
+	margin: 71px auto 0;
+}	
+/*<!--脚步文字---------->*/
+#tailText{
+	width: 950px;
+	height: 125px;
+	margin: 15px auto 0;
+	position: relative;
+	/*left: 45%;*/
+}
+#tailText .chart{
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+}
+#tailText p{
+	display: block;
+	width: 200px;
+	height: 34px;
+	position: absolute;
+	left: 45%;
+	top: 25px;
+	font-size: 11px;
+	color: #d8bfd8;
+	letter-spacing: 5px;
+	color: #000;
+}
+#tailText p:hover{
+	cursor: pointer;
+}
+#tailText h2:nth-of-type(1){
+	width: 950px;
+	height: 40px;
+	position: absolute;
+	left: 28%;
+	top: 63px;
+	font-size: 17px;
+}
+#tailText h2:nth-of-type(2){
+	width: 250px;
+	height: 34px;
+	position: absolute;
+	left: 40%;
+	top: 95px;
+	font-weight: bold;
+	font-size: 17px;
+}
